@@ -3,9 +3,14 @@ interface Dog {
   color: string;
 }
 
-const myDog: Dog = {
+interface Details extends Dog {
+  hasCollar: boolean;
+}
+
+const myDog: Details = {
   breed: 'Beagle',
-  color: 'mixed'
+  color: 'mixed',
+  hasCollar: true
 }
 
 console.log(myDog);
